@@ -1,0 +1,63 @@
+name: HelpMe-X
+version: ${project.version}
+main: com.qhelpme.HelpMePlugin
+api-version: 1.19
+author: HelpMe-X
+description: A help request plugin for inecraft
+
+commands:
+  helpme:
+    description: Request help from staff members
+    usage: /<command> <task description>
+    permission: helpme.use
+    permission-message: "&7[&a&lHelpMe&7] &cYou don't have permission to use this command!"
+  
+  helpaccept:
+    description: Accept a help request
+    usage: /<command> <player>
+    permission: helpme.helper
+    permission-message: "&7[&a&lHelpMe&7] &cYou don't have permission to use this command!"
+  
+  helplist:
+    description: List all pending help requests
+    usage: /<command>
+    permission: helpme.helper
+    permission-message: "&7[&a&lHelpMe&7] &cYou don't have permission to use this command!"
+  
+  helpreject:
+    description: Reject a help request
+    usage: /<command> <player>
+    permission: helpme.helper
+    permission-message: "&7[&a&lHelpMe&7] &cYou don't have permission to use this command!"
+  
+  helptp:
+    description: Teleport to a player with a help request
+    usage: /<command> <player>
+    permission: helpme.helper
+    permission-message: "&7[&a&lHelpMe&7] &cYou don't have permission to use this command!"
+  
+  helpadmins:
+    description: View helper statistics
+    usage: /<command>
+    permission: helpme.helper
+    permission-message: "&7[&a&lHelpMe&7] &cYou don't have permission to use this command!"
+  
+  helpchat:
+    description: Chat with your helper or player
+    usage: /<command> <message>
+  
+  helpcomplete:
+    description: Complete the current help session
+    usage: /<command>
+    permission: helpme.helper
+    permission-message: "&7[&a&lHelpMe&7] &cYou don't have permission to use this command!"
+
+permissions:
+  helpme.use:
+    description: Allows players to request help
+    default: true
+  
+  helpme.helper:
+    description: Allows helpers to manage help requests
+    default: op
+
