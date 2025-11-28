@@ -1,0 +1,15 @@
+language: EN
+# Supported languages:
+#   EN - English (formal)
+#   FA - Persian (فارسی)
+
+menu-mode: menu
+# Display mode for /helplist command:
+#   text - Show requests as clickable text messages
+#   menu - Show requests in a GUI menu with hover tooltips
+
+colored-messages: true
+# Enable colored messages in plugin output:
+#   true - Commands in messages will be highlighted in yellow
+#   false - Messages will use default formatting without command highlighting
+
