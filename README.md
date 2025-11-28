@@ -18,13 +18,6 @@ To build the plugin from source:
 mvn clean package
 ```
 
-## Installation
-
-1. Download the latest release or build from source
-2. Copy the JAR file into your server's `plugins/` folder
-3. Restart your server (or use `/reload` if you prefer)
-4. The plugin will automatically create `config.yml` and `data.yml` on first run
-
 ## Configuration
 
 The `config.yml` file contains the following options:
